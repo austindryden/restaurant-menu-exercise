@@ -168,23 +168,23 @@ function addClickHandler(obj){
 function clickCallback(event){
     console.log("HEY YOU CLICKED A THING~");
     console.log(event.target.textContent);
-    const category = event.target.textContent;
-    mainContentContainer.textContent = "";
-    if(VEGAN){
-        menu[category]
-            .filter(isItVegan)
-            .map(itemToCard)
-            .map(appendCardToMainContent);
-    } else if(VEGETARIAN){
-        menu[category]
-        .filter(isItVegetarian)
-        .map(itemToCard)
-        .map(appendCardToMainContent);
-    } else {
-        menu[category]
-        .map(itemToCard)
-        .map(appendCardToMainContent);
-    }
+    // const category = event.target.textContent;
+    // mainContentContainer.textContent = "";
+    // // if(VEGAN){
+    // //     menu[category]
+    // //         .filter(isItVegan)
+    // //         .map(itemToCard)
+    // //         .map(appendCardToMainContent);
+    // // } else if(VEGETARIAN){
+    // //     menu[category]
+    // //     .filter(isItVegetarian)
+    // //     .map(itemToCard)
+    // //     .map(appendCardToMainContent);
+    // // } else {
+    //     menu[category]
+    //     .map(itemToCard)
+    //     .map(appendCardToMainContent);
+    // // }
 }
 
 function isItVegan(food){
